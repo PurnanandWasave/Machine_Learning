@@ -29,7 +29,7 @@ def get_recommendations(dataset,input_user):
       continue
   
 #Extract list of movies
-  filtered_list = [x for x in dataset[user] if x not in \ dataset[input_user] or dataset[input_user][x] == 0]
+  filtered_list = [x for x in dataset[user] if x not in \dataset[input_user] or dataset[input_user][x] == 0]
       
 #Rating of movies
     for item in filtered_list:
